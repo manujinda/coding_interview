@@ -1,4 +1,7 @@
 # Author: Manujinda Wathugala
+# Cracking the Coding Interview
+# Chapter 1 - Arrays and Strings
+# 1.1 - Is Unique
 
 # n - Length of the string
 # c - Size of the alphabet
