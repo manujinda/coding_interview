@@ -47,20 +47,6 @@ def check_permutation_2(str1, str2, alph_size):
     return True
 
 
-# O(n)
-def check_permutation_4(str1, str2):
-    if len(str1) != len(str2):
-        return False
-
-    char_sum = 0
-
-    for idx, chr1 in enumerate(str1):
-        char_sum += ord(chr1)
-        char_sum -= ord(str2[idx])
-
-    return char_sum == 0
-
-
 # O(n log n)
 def check_permutation_3(str1, str2):
 
@@ -88,9 +74,7 @@ if __name__ == '__main__':
     print(check_permutation_1(str1, str2))
     print(check_permutation_2(str1, str2, 256))
     print(check_permutation_3(str1, str2))
-    print(check_permutation_4(str1, str2))
 
     print(check_permutation_1(str1, str3))
     print(check_permutation_2(str1, str3, 256))
     print(check_permutation_3(str1, str3))
-    print(check_permutation_4(str1, str3))
